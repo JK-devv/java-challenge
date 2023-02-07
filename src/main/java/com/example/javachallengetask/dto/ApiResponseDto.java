@@ -8,5 +8,5 @@ import java.util.List;
 @Data
 public class ApiResponseDto {
     @JsonProperty(value = "items")
-    private List<ApiItemResponseDto> itemResponseDtos;
+    private List<ApiItemDto> itemResponseDtos;
 }
