@@ -11,7 +11,7 @@ public class UserServiceImpl implements UserService {
     private static final String FILTER_LOCATION_ROMANIA = "Romania";
     private static final String FILTER_LOCATION_MOLDOVA = "Moldova";
     private static final Integer FILTER_MIN_ANSWER_COUNT = 1;
-    private static final List<String> FILTER_TAGS = List.of("java", "net ", "docker", "C#");
+    private static final List<String> FILTER_TAGS = List.of("java", "net ", "docker", "C#","google");
     private final UserMapper mapper;
     private final HttpClient client;
 
