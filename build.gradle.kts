@@ -19,9 +19,11 @@ repositories {
 }
 
 dependencies {
-    implementation("org.apache.httpcomponents:httpclient:4.5")
-    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
-    implementation("com.fasterxml.jackson.core:jackson-annotations:2.0.1")
+    implementation("org.apache.httpcomponents:httpclient:4.5.14")
+    implementation("com.fasterxml.jackson.core:jackson-annotations:2.14.2")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.14.2")
+    implementation("commons-logging:commons-logging:1.2")
+
 
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")

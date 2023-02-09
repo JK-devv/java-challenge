@@ -13,13 +13,13 @@ public class UserMapper {
         return User.builder()
                 .userName(apiItemDto.getUserName())
                 .linkToAvatar(apiItemDto.getLinkToAvatar())
-                .answerCount(apiItemDto.getAnswerCount())
+                .answerCount(apiItemDto.getAnswerCount() != null ? apiItemDto.getAnswerCount() : 0)
                 .linkToProfile(apiItemDto.getLinkToProfile())
-                .questionCount(apiItemDto.getQuestionCount())
+                .questionCount(apiItemDto.getQuestionCount() != null ? apiItemDto.getQuestionCount() : 0)
                 .location(apiItemDto.getLocation())
-                .tags(Arrays.stream(apiItemDto.getCollectives())
+                .tags(apiItemDto.getCollectives() != null ? Arrays.stream(apiItemDto.getCollectives())
                         .flatMap(collectives -> Arrays.stream(collectives.getCollectiveDto().getTags()))
-                        .collect(Collectors.joining()))
+                        .collect(Collectors.joining()) : "")
                 .build();
 
     }

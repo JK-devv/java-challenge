@@ -13,6 +13,8 @@ public class ApiItemDto {
     private Integer answerCount;
     @JsonProperty(value = "question_count")
     private Integer questionCount;
+    @JsonProperty(value = "reputation")
+    private Integer reputation;
     @JsonProperty(value = "collectives")
     private ApiCollectiveMembershipDto[] collectives;
     @JsonProperty(value = "link")

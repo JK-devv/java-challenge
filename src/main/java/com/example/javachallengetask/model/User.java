@@ -15,6 +15,7 @@ public class User {
     private Integer answerCount;
     private Integer questionCount;
     private String tags;
+    private Integer reputation;
     private String linkToProfile;
     private String linkToAvatar;
 }
